@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Oki Fork</title>
+<style>
+body{
+  background:#ffeaf4;
+  font-family:Georgia,serif;
+  margin:0;
+  color:#2b1b25;
+}
+header{
+  text-align:center;
+  padding:55px 20px 35px;
+  border-bottom:2px solid #2b1b25;
+}
+.logo{
+  font-size:80px;
+  letter-spacing:5px;
+  margin:0;
+}
+.tagline{
+  font-style:italic;
+  color:#9b5f80;
+}
+nav{
+  margin-top:25px;
+  font-size:14px;
+  letter-spacing:2px;
+}
+nav span{
+  margin:0 14px;
+}
+.grid{
+  display:flex;
+  flex-wrap:wrap;
+  gap:35px;
+  justify-content:center;
+  padding:50px 25px;
+}
+.album{
+  width:270px;
+  background:white;
+  border:1px solid #f1c7dc;
+  border-radius:22px;
+  overflow:hidden;
+  position:relative;
+  box-shadow:0 12px 30px rgba(90,40,70,.12);
+}
+.album img{
+  width:100%;
+  display:block;
+}
+.score{
+  position:absolute;
+  top:16px;
+  right:16px;
+  width:62px;
+  height:62px;
+  border-radius:50%;
+  background:#ff8fc7;
+  color:white;
+  border:3px solid white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:22px;
+  font-weight:bold;
+}
+.badge{
+  display:inline-block;
+  background:#2b1b25;
+  color:white;
+  font-size:11px;
+  letter-spacing:1px;
+  padding:6px 9px;
+  border-radius:20px;
+  margin-bottom:10px;
+}
+.info{
+  padding:20px;
+}
+h2{
+  margin:0;
+  font-size:24px;
+}
+.artist{
+  color:#9b5f80;
+  margin-top:8px;
+}
+.review{
+  font-size:14px;
+  line-height:1.5;
+}
+footer{
+  text-align:center;
+  padding:30px;
+  color:#9b5f80;
+  font-style:italic;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1 class="logo">OKI FORK</h1>
+  <p class="tagline">Independent music reviews, ratings & obsession archives.</p>
+  <nav>
+    <span>REVIEWS</span>
+    <span>BEST NEW MUSIC</span>
+    <span>PLAYLISTS</span>
+    <span>ARCHIVE</span>
+  </nav>
+</header>
+
+<main class="grid">
+
+  <article class="album">
+    <img src="https://via.placeholder.com/400x400/ffd6e8/2b1b25?text=Album+Cover">
+    <div class="score">9.4</div>
+    <div class="info">
+      <span class="badge">OKI'S PICK</span>
+      <h2>Album Name</h2>
+      <p class="artist">Artist Name</p>
+      <p class="review">A dreamy, dramatic record with a glittering heart and sharp little teeth.</p>
+    </div>
+  </article>
+
+  <article class="album">
+    <img src="https://via.placeholder.com/400x400/f6c7dc/2b1b25?text=Album+Cover">
+    <div class="score">8.7</div>
+    <div class="info">
+      <h2>Another Album</h2>
+      <p class="artist">Another Artist</p>
+      <p class="review">Elegant, emotional and painfully stylish from the very first track.</p>
+    </div>
+  </article>
+
+  <article class="album">
+    <img src="https://via.placeholder.com/400x400/eeb4d0/2b1b25?text=Album+Cover">
+    <div class="score">7.9</div>
+    <div class="info">
+      <h2>Third Album</h2>
+      <p class="artist">Third Artist</p>
+      <p class="review">Not perfect, but impossible to ignore; messy in a very glamorous way.</p>
+    </div>
+  </article>
+
+</main>
+
+<footer>
+  made with too much taste by bonbonida
+</footer>
+
+</body>
+</html>
