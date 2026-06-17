@@ -2,7 +2,28 @@
 <html>
 <head>
 <title>OkiFork</title>
-<style>
+  <style>
+  .search-box{
+    margin-top:25px;
+    text-align:center;
+}
+
+.search-box input{
+    width:350px;
+    max-width:90%;
+    padding:12px 18px;
+    border:2px solid #ef8fc2;
+    border-radius:999px;
+    background:white;
+    font-family:Georgia, serif;
+    font-size:16px;
+    outline:none;
+    transition:.2s;
+}
+
+.search-box input:focus{
+    border-color:#d96ca8;
+}
 body{
   background:#ffeaf4;
   font-family:Georgia,serif;
@@ -14,9 +35,6 @@ header{
   padding:55px 20px 35px;
   border-bottom:2px solid #2b1b25;
 }
-  <div class="search-box">
-  <input type="text" id="searchInput" placeholder="Search albums...">
-</div>
 .logo{
   font-size:80px;
   letter-spacing:5px;
@@ -114,6 +132,10 @@ footer{
     <span>BEST NEW MUSIC</span>
     <span>ALL TIME TOP 10</span>
   </nav>
+
+  <div class="search-box">
+    <input type="text" id="searchInput" placeholder="Search albums...">
+</div>
 </header>
 
 <main class="grid">
