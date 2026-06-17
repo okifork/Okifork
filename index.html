@@ -176,6 +176,23 @@ footer{
 <footer>
   made with too much taste by bonbonida
 </footer>
+<script>
+const searchInput = document.getElementById("searchInput");
+const albums = document.querySelectorAll(".album");
 
+searchInput.addEventListener("input", function () {
+    const value = this.value.toLowerCase();
+
+    albums.forEach(album => {
+        const text = album.innerText.toLowerCase();
+
+        if (text.includes(value)) {
+            album.style.display = "";
+        } else {
+            album.style.display = "none";
+        }
+    });
+});
+</script>
 </body>
 </html>
